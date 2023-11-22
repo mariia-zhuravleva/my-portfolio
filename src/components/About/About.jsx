@@ -34,12 +34,12 @@ const About = () => {
             <br /> to connect, exchange ideas,
             <br /> and foster <br /> a sense of belonging. <br />
             <br /> <span className={styles.pSpan}>Together,</span> <br />
-            we're redefining the way we experience the world.
+            we are redefining the way we experience the world.
           </p>
         </div>
         <div className={`${styles.ourImages}`}>
           <div className={styles.imageContainer}>
-            <img src={aboutMaria} alt="image" />
+            {/* <img src={aboutMaria} alt="image" /> */}
             <div className={styles.imageText}>
               <Link to="https://www.linkedin.com/in/mariia-zhuravleva/" target="_blank" rel="noopener noreferrer"
                 style={{

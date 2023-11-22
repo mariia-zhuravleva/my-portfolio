@@ -3,8 +3,9 @@ import { Routes, Route, useNavigate } from 'react-router-dom'
 
 // components
 import NavBar from './components/NavBar/NavBar'
-import About from './pages/About/About'
-import ProjectsIndex from './pages/ProjectsIndex/ProjectsIndex'
+import About from './components/About/About'
+import ProjectsIndex from './components/ProjectsIndex/ProjectsIndex'
+import Contact from './components/Contact/Contact'
 
 
 import './App.css'
