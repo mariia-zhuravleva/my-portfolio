@@ -6,12 +6,13 @@
   display: flex;
   padding: 5px 21px;
   align-items: center;
-  border-bottom: 1px solid rgb(200, 200, 200);
+  /* border-bottom: 1px solid rgb(200, 200, 200); */
 }
 
 
 .container ul {
-  margin: 0;
+  margin-top: 20px;
+  padding: 0;
   width: 100%;
   display: flex;
   list-style: none;
@@ -24,8 +25,14 @@
 .container li {
   margin-left: 40px;
   text-align: right;
-  font-size: 13px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 0.5px solid transparent;
+  border-radius: 50%; 
+  transition: border-color 0.3s ease; 
+  padding: 5px 10px; 
 }
+
 
 @keyframes menuItemClick {
   0% {
@@ -41,12 +48,7 @@
 
 .container li:hover {
   animation: menuItemClick 0.3s; 
+  border-color: black; 
+  border-radius: 50%; 
 }
 
-
-/* .line {
-  width: 30px;
-  height: 3px;
-  background: #333;
-  margin: 6px auto;
-} */

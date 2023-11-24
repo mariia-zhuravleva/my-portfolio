@@ -1,0 +1,50 @@
+.homeContainer {
+  height: 100vh;
+  margin: 0 50px;
+  display: flex;
+  align-items: center;
+}
+
+.homePhraseContainer {
+  width: 100%;
+}
+
+.homePhrase {
+  font-size: 80px;
+  line-height: 90px;
+  width: 50%;
+  position: relative;
+}
+
+.homeSpan {
+  position: relative;
+}
+
+.homeBackground {
+  width: 50%; 
+}
+
+@keyframes lineAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.homeSpan::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  height: 1px; 
+  background-color: black; 
+  animation: lineAnimation 0.9s ease-in-out; 
+  animation-fill-mode: both;
+}
+
+.homeSpan:nth-child(2)::after {
+  animation-delay: 0.6s; 
+}
+
