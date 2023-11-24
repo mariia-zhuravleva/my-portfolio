@@ -1,10 +1,13 @@
-.container {
+.container,
+.navbarContainer {
   top: 0; 
   z-index: 1;
   width: 100%;
-  height: 30px;
+  height: 100px;
   display: flex;
+  justify-content: flex-end; 
   padding: 5px 21px;
+  padding-bottom: 25px;
   align-items: center;
   /* border-bottom: 1px solid rgb(200, 200, 200); */
 }
@@ -25,12 +28,45 @@
 .container li {
   margin-left: 40px;
   text-align: right;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
-  border: 0.5px solid transparent;
+  border: 0.3px solid black;
   border-radius: 50%; 
   transition: border-color 0.3s ease; 
-  padding: 5px 10px; 
+  padding: 0 20px; 
+}
+
+.verticalList {
+  list-style: none;
+  display: flex;
+  margin-top: 1100px;
+  transform: rotate(-180deg);
+  transform-origin: right top;
+  writing-mode: vertical-rl; 
+}
+
+.verticalList li {
+  margin-top: 50px; 
+  font-size: 13px;
+  border-left: 0.5px solid transparent; 
+}
+
+.verticalList li:hover {
+  border-left: 0.5px solid black; 
+}
+
+.verticalList hr {
+  border: 0.5px solid black;
+  margin: 0 10px;
+}
+
+.sideContainer {
+  display: flex;
+  align-items: center;
+}
+
+.sideLine {
+  height: 50px; 
 }
 
 
@@ -48,7 +84,11 @@
 
 .container li:hover {
   animation: menuItemClick 0.3s; 
-  border-color: black; 
+  border-color: #6b5b4d; 
   border-radius: 50%; 
+}
+
+.container li a:hover { 
+  color: #392e26;
 }
 
