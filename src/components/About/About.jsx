@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 // css
 import styles from './About.module.css'
-// import aboutMaria from "../../assets/img/aboutMaria.jpg"
+import pic1 from "../../assets/img/pic1.jpg"
 
 const About = () => {
 
@@ -15,53 +15,40 @@ const About = () => {
           <p className={`${styles.aboutWord}`}>About</p>
           {/* <hr className={`${styles.aboutLine}`} /> */}
         </div>
-        <div className={styles.aboutUsContainer}>
-          <div className={styles.headerAbout}>Our<span>Mission</span></div>
-          <div className={`${styles.paragraphAbout}`}>
-            <p><span className={styles.pSpan}>Our mission</span> is <br />
-              to inspire others to step out of their comfort zones,
-              <br />
-              discover new cultures,
-              <br />
-              traditions, landscapes,
-              <br />
-              and create lasting <br /> memories.
-              <br />
-              <br />
-              We <span className={styles.pSpan}>believe</span> that every journey has a story to tell,
-              <br />
-              and by sharing these stories,
-              <br />
-              we can inspire others <br /> to embark on <br /> their own adventures. <br />
-              <br /> Through our <span className={styles.pSpan}>platform</span>, <br /> we provide resources,
-              <br />inspiration, <br /> and a place for travelers
-              <br /> to connect, exchange ideas,
-              <br /> and foster <br /> a sense of belonging. <br />
-              <br /> <span className={styles.pSpan}>Together,</span> <br />
-              we are redefining the way we experience the world.
-            </p>
-          </div>
-          <div className={`${styles.ourImages}`}>
-            <div className={styles.imageContainer}>
-              {/* <img src={aboutMaria} alt="image" /> */}
-              <div className={styles.imageText}>
-                <Link to="https://www.linkedin.com/in/mariia-zhuravleva/" target="_blank" rel="noopener noreferrer"
-                  style={{
-                    textDecoration: 'none',
-                  }}
-                  onMouseEnter={(e) => e.target.style.textDecoration = 'underline'}
-                  onMouseLeave={(e) => e.target.style.textDecoration = 'none'}
-                >
-                  LinkedIn
-                </Link>
-              </div>
+        <div className={styles.aboutMeContainer}>
+          <div className={styles.contentContainer}>
+            <div className={`${styles.paragraphAbout} ${styles.column}`}>
+              <p className={styles.greeting}>Hey there. I'm Mariia</p>
+              <p> I'm a seasoned Software Engineer with a unique blend of technical expertise and a creative background in lifestyle and fashion content creation. 
+                My journey reflects a commitment to seamlessly integrate creativity with code to deliver impactful solutions.
+                <br />
+                <br />
+                During my content creation career, I cultivated adaptability, time management, and problem-solving skills. 
+                Now, as a Software Engineer, I leverage these skills to ensure each project I undertake meets the highest standards of quality and innovation.
+              </p>
+              <p className={styles.experienceHeader}>Experience</p>
+              <p className={styles.skillsHeader}>Skills</p>
+                </div>
+
+            <div className={`${styles.myImages} ${styles.anotherColumn}`}>
+              <img src={pic1} alt="image" />
             </div>
           </div>
-          <div className={styles.anotherHeader}><span className={styles.team}>Our Team</span><span>Meet</span></div>
         </div>
       </div>
     </div>
   )
 }
+              // <div className={styles.imageText}>
+              //   <Link to="https://www.linkedin.com/in/mariia-zhuravleva/" target="_blank" rel="noopener noreferrer"
+              //     style={{
+              //       textDecoration: 'none',
+              //     }}
+              //     onMouseEnter={(e) => e.target.style.textDecoration = 'underline'}
+              //     onMouseLeave={(e) => e.target.style.textDecoration = 'none'}
+              //   >
+              //     LinkedIn
+              //   </Link>
+              // </div>
 
 export default About

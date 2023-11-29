@@ -2,10 +2,11 @@
   display: flex;
   justify-content: center; 
   align-items: flex-start; 
-  height: 100vh; 
+  height: 100%; 
   width: 100%;
-  overflow: hidden; /* Hide overflowing content */
   position: relative; 
+  padding: 100px;
+  padding-right: 50px;
 }
 
 .mainAboutContainer {
@@ -25,7 +26,8 @@
   width: 100%;
   height: 180px;
   overflow: hidden;
-  animation: fadeInFromBottom 1.5s ease-out forwards;
+  /* opacity: 0; */
+  animation: fadeInFromBottom 1.5s ease-in forwards;
 }
 
 
@@ -48,19 +50,23 @@
   height: 100%;
   background-color: black; 
   z-index: -1;
-  animation: revealContent 0.5s ease-out forwards;
+  animation: revealContent 0.3s ease-in forwards;
 }
 
-.aboutUsContainer {
-  margin-top: 10%;
+.aboutMeContainer {
+  margin-top: 3%;
 }
 
 @keyframes fadeInFromBottom {
   from {
     height: 0;
+    /* opacity: 0; */
+    transform: translateY(10px); 
   }
   to {
-    height: 180px; 
+    height: 180px;
+    /* opacity: 1; */
+    transform: translateY(0); 
   }
 }
 
@@ -72,5 +78,63 @@
   to {
     top: -100%; 
     opacity: 0;
+  }
+}
+
+.aboutMeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.column {
+  width: 55%; 
+}
+
+.anotherColumn {
+  width: 40%;
+  position: relative;
+  top: -50px; 
+}
+
+.myImages {
+  padding-bottom: 150px;
+  position: relative;
+  overflow: visible; 
+}
+
+.myImages img {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  top: -50px;
+  opacity: 0; 
+  animation: fadeInFromRight 2s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+
+.experienceHeader,
+.skillsHeader,
+.greeting {
+  font-size: 20px;
+  font-family: 'Ogg Medium', sans-serif;
+  padding: 15px 0;
+}
+
+@keyframes fadeInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(80%); 
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); 
   }
 }
