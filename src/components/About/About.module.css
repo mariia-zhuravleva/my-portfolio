@@ -1,11 +1,76 @@
-/* about-animations.module.css */
-.transition-container {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+.aboutContainer {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  height: 100vh; 
+  width: 100%;
+  overflow: hidden; /* Hide overflowing content */
+  position: relative; 
 }
 
-.aboutContainer.transition-container {
-  opacity: 1;
-  transform: translateY(0);
+.mainAboutContainer {
+  margin-top: 7%;
+}
+
+.mainHeader {
+  text-align: left;
+  height: 200px; 
+  overflow: hidden; 
+  position: relative; 
+  z-index: 1; 
+}
+
+.aboutWord  {
+  font-size: 140px;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  animation: fadeInFromBottom 1.5s ease-out forwards;
+}
+
+
+.curtain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.curtain::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; 
+  z-index: -1;
+  animation: revealContent 0.5s ease-out forwards;
+}
+
+.aboutUsContainer {
+  margin-top: 10%;
+}
+
+@keyframes fadeInFromBottom {
+  from {
+    height: 0;
+  }
+  to {
+    height: 180px; 
+  }
+}
+
+@keyframes revealContent {
+  from {
+    top: 0;
+    opacity: 10;
+  }
+  to {
+    top: -100%; 
+    opacity: 0;
+  }
 }

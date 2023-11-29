@@ -9,9 +9,11 @@ const About = () => {
 
   return (
     <div className={styles.aboutContainer}>
+      <div className={`${styles.curtain}`} />
       <div className={styles.mainAboutContainer}>
         <div className={`${styles.mainHeader}`}>
-          <h1>About</h1>
+          <p className={`${styles.aboutWord}`}>About</p>
+          {/* <hr className={`${styles.aboutLine}`} /> */}
         </div>
         <div className={styles.aboutUsContainer}>
           <div className={styles.headerAbout}>Our<span>Mission</span></div>
