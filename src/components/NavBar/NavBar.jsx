@@ -22,7 +22,7 @@ const NavBar = () => {
   }, [])
 
   return (
-    <div className={`${styles.navbarContainer}`}>
+    <div className={`${styles.navbarContainer} ${scrolled && styles.scrolled}`}>
       <div className={`${styles.sideContainer}`}>
         <ul className={`${styles.verticalList}`}>
           <hr className={`${styles.sideLine}`} />    
