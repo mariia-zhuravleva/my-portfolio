@@ -39,6 +39,7 @@
   height: 100%;
   overflow: hidden;
   z-index: 0;
+  pointer-events: none; 
 }
 
 .curtain::before {
@@ -137,4 +138,29 @@
     opacity: 1;
     transform: translateX(0); 
   }
+}
+
+.abbr {
+  font-family: 'Ogg Medium', sans-serif;
+}
+
+.resume {
+  text-align: center;
+  font-family: 'Ogg Medium', sans-serif;
+  font-size: 20px;
+  height: 45px;
+  width: 150px;
+  background-color: black;
+  padding: 6px 16px; 
+  display: inline-block; 
+  margin-top: 25px; 
+}
+
+.resume a {
+  color: white; 
+  text-decoration: none;
+}
+
+.resume:hover {
+  background-color: #333;
 }

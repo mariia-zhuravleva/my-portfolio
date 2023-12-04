@@ -18,7 +18,7 @@ const Home = () => {
         </div>
         <div className={styles.bottomLeft}>
           <p className={styles.name}>Mariia Zhuravleva</p>
-          <p>Software Engineer / Full Stack Web Developer </p>
+          <p>Software Engineer ⎢ Full Stack Web Developer </p>
         </div>
       </div>
       <div className={styles.arrowContainer}>
