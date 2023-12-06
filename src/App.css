@@ -13,6 +13,11 @@
   src: url('./fonts/Ogg-Medium.otf');
 }
 
+@font-face {
+  font-family: 'Brown Sugar';
+  src: url('./fonts/Brown-Sugar.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
