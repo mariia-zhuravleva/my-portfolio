@@ -1,4 +1,6 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+
 import styles from './ProjectsIndex.module.css'
 
 const ProjectsIndex = () => {
@@ -10,11 +12,11 @@ const ProjectsIndex = () => {
 
 
   const projectList = [
-    { name: 'the journal', description: '— a dedicated platform curating meaningful content across diverse topics, providing inspiration and education' },
-    { name: 'wandr', description: '— a dynamic web app connecting travelers to share unique journeys and travel experiences' },
-    { name: 'powder peak', description: '— the ultimate winter sports inspiration app, featuring informative articles about ski and snowboard resorts' },
-    { name: 'Artful Recollections', description: '— an engaging card-matching game' },
-    { name: 'Tic Tac Toe', description: '— a modern twist to the classic Tic-Tac-Toe game' },
+    { name: 'the journal', path: '/journal', description: '— a dedicated platform curating meaningful content across diverse topics, providing inspiration and education' },
+    { name: 'wandr', path: '/wandr', description: '— a dynamic web app connecting travelers to share unique journeys and travel experiences' },
+    { name: 'powder peak', path: '/powder-peak', description: '— the ultimate winter sports inspiration app, featuring informative articles about ski and snowboard resorts' },
+    { name: 'Artful Recollections', path: '/artful-recollections', description: '— an engaging card-matching game' },
+    { name: 'Tic Tac Toe', path: '/tic-tac-toe', description: '— a modern twist to the classic Tic-Tac-Toe game' },
   ]
 
   return ( 
@@ -28,7 +30,7 @@ const ProjectsIndex = () => {
           {projectList.map((project, index) => (
             <li key={index}>
               <div>
-                <p className={styles.projectName}>{project.name}</p>
+                <NavLink to={project.path} className={styles.projectName}>{project.name}</NavLink>
                 <p className={styles.projectDescription}>{project.description}</p>
               </div>
             </li>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import styles from './Home.module.css'
 import arrowDown from "../../assets/img/arrowDown.png"
 import About from '../About/About'
+import ProjectsIndex from '../ProjectsIndex/ProjectsIndex'
 
 const Home = () => {
   return (
@@ -30,6 +31,9 @@ const Home = () => {
       </div>
       <div className={`${styles.bigAboutContainer}`}>
         <About />
+      </div>
+      <div className={`${styles.projectsIndexContainer}`}>
+        <ProjectsIndex />
       </div>
     </div>
   )

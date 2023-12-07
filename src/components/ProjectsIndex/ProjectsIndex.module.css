@@ -49,7 +49,7 @@
   font-weight: 200;
 }
 
-.projectList p.projectName:hover {
+.projectList a.projectName:hover {
   font-style: italic; 
   cursor: pointer; 
   transform: translateX(5px); 
