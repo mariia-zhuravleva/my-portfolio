@@ -1,5 +1,3 @@
-/* Journal.module.css */
-
 .journalContainer {
   width: 100%;
   height: 100%;
@@ -9,9 +7,6 @@
 }
 
 .rectangle {
-  /* position: absolute;
-  top: 0;
-  left: 15%; */
   width: 70%;
   height: 0;
   margin: 0 auto;
@@ -20,7 +15,6 @@
 }
 
 .text {
-  /* font-family: 'Brown Sugar', sans-serif; */
   text-transform: capitalize;
   position: absolute;
   top: 50%;
@@ -34,7 +28,6 @@
   overflow: hidden;
   animation: fadeInText 1s ease-in-out 1.5s forwards, fadeInFromBottom 1.5s ease-in-out 1.5s forwards;
   line-height: 120px;
-  
 }
 
 .textDouble {
@@ -210,7 +203,6 @@ ul.journalFeatures p {
   margin-top: 100px;
   width: 80%;
   border-top: solid black 0.5px;
-  /* border-right: solid black 0.5px; */
   padding: 30px;
 }
 

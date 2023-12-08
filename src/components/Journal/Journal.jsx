@@ -8,8 +8,8 @@ import styles from './Journal.module.css'
 
 const Journal = () => {
   const projectTechnologies = {
-    Frontend: ['HTML5 •', 'CSS3 •', 'JavaScript'],
     Backend: ['Python •', 'Django •', 'Neon'],
+    Frontend: ['HTML5 •', 'CSS3 •', 'JavaScript'],
     Database: ['PostgreSQL'],
     Deployment: ['Fly.io'],
     'Cloud Storage': ['Amazon AWS S3'],
