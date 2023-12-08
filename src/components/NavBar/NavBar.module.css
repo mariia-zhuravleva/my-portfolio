@@ -9,7 +9,8 @@
   justify-content: flex-end;
   padding: 25px 21px;
   align-items: center;
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: #f4efeb;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
