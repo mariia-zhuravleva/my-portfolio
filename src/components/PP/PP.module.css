@@ -22,8 +22,6 @@
   transform: translate(-50%, -50%);
   font-size: 135px;
   color: #dbcdc2;
-  /* color: #f4efeb; */
-  /* color: #d8c8bb; */
   opacity: 0;
   overflow: hidden;
   animation: fadeInText 1s ease-in-out 1.5s forwards, fadeInFromBottom 1.5s ease-in-out 1.5s forwards;
@@ -87,7 +85,6 @@
   display: flex;
   justify-content: center;
   width: 55%;
-  /* margin-top: 20px; */
 }
 
 .journalDetailOne {

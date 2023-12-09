@@ -1,14 +1,13 @@
-import React from 'react'
 import { NavLink } from 'react-router-dom'
-
 import styles from './ProjectsIndex.module.css'
 
 const ProjectsIndex = () => {
+
   const projectsText = `
     Welcome to the showcase of my projects, where I bring to life my passion for crafting meaningful and innovative solutions.\n
     Each project reflects my journey as a software engineer and full—stack web developer.\n
     As I continue to learn and expand my skill set, I'm excited to take on new projects that contribute to positive impacts in the world.
-  `;
+  `
 
 
   const projectList = [

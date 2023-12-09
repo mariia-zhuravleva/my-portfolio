@@ -3,7 +3,6 @@ import landing from "../../assets/img/ar-landing.gif"
 import level from "../../assets/img/level-page.png"
 import game from "../../assets/img/game-page.png"
 import mobileVideo from "../../assets/img/ar-video.gif"
-import mobile from "../../assets/img/pp-mobile-views.png"
 import styles from './AR.module.css'
 
 const AR = () => {
@@ -17,7 +16,7 @@ const AR = () => {
   const projectFeatures = [
     'Beautiful Artwork: Immerse yourself in a curated collection of breathtaking art pieces.',
     'Difficulty Levels: Tailor the challenge to your skill level—choose from novice, proficient, or maestro modes to test your memory skills.',
-    'Move Counter: DKeep track of your progress with a move counter, adding a strategic element to the game.',
+    'Move Counter: Keep track of your progress with a move counter, adding a strategic element to the game.',
     'Countdown Timer: Race against time to complete the game—adding an exciting element of urgency.',
     'Reset Functionality: Begin a new game at any time with the convenient reset button.',
     'Sound Effects: Enhance your gaming experience with interactive sound effects that bring the virtual art gallery to life.',

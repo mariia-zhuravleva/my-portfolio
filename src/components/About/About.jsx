@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 
-// css
 import styles from './About.module.css'
 import pic1 from "../../assets/img/pic1.jpg"
 
@@ -14,7 +13,6 @@ const About = () => {
       <div className={styles.mainAboutContainer}>
         <div className={`${styles.mainHeader}`}>
           <p className={`${styles.aboutWord}`}>About</p>
-          {/* <hr className={`${styles.aboutLine}`} /> */}
         </div>
         <div className={styles.aboutMeContainer}>
           <div className={styles.contentContainer}>
@@ -42,7 +40,9 @@ const About = () => {
                 <span className={styles.abbr}>Database</span><br />PostgreSQL • MongoDB
               </p>
               <div className={styles.resume}>
-                <NavLink to="https://drive.google.com/file/d/1I3URdaF0Sl5UQwdMp8DV6fu4JSuU3feU/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</NavLink>
+                <button>Resume
+                  <NavLink to="https://drive.google.com/file/d/1I3URdaF0Sl5UQwdMp8DV6fu4JSuU3feU/view?usp=sharing" target="_blank" rel="noopener noreferrer"></NavLink>
+                </button>
               </div>
             </div>
 
@@ -55,16 +55,5 @@ const About = () => {
     </div>
   )
 }
-              // <div className={styles.imageText}>
-              //   <Link to="https://www.linkedin.com/in/mariia-zhuravleva/" target="_blank" rel="noopener noreferrer"
-              //     style={{
-              //       textDecoration: 'none',
-              //     }}
-              //     onMouseEnter={(e) => e.target.style.textDecoration = 'underline'}
-              //     onMouseLeave={(e) => e.target.style.textDecoration = 'none'}
-              //   >
-              //     LinkedIn
-              //   </Link>
-              // </div>
 
 export default About

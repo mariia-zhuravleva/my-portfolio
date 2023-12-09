@@ -9,9 +9,6 @@
   padding-right: 50px;
 }
 
-.mainAboutContainer {
-  margin-top: 7%;
-}
 
 .mainHeader {
   text-align: left;
@@ -60,12 +57,10 @@
 @keyframes fadeInFromBottom {
   from {
     height: 0;
-    /* opacity: 0; */
     transform: translateY(10px); 
   }
   to {
     height: 180px;
-    /* opacity: 1; */
     transform: translateY(0); 
   }
 }
@@ -144,26 +139,25 @@
 }
 
 .resume {
-  text-align: center;
-  /* font-family: 'Ogg Medium', sans-serif; */
-  font-size: 20px;
-  font-weight: 500;
-  height: 45px;
-  width: 150px;
-  background-color: black;
-  padding: 7px 16px; 
-  /* display: inline-block;  */
-  margin-top: 25px; 
-  float: right;
-  /* text-transform: lowercase; */
-  /* font-family: 'Brown Sugar', sans-serif; */
+  margin-top: 45px; 
+  color: #2d2926;
 }
 
-.resume a {
-  color: white; 
-  text-decoration: none;
-}
-
-.resume:hover {
-  background-color: #333;
-}
+.resume button {
+  font-size: 16px;
+  height: 35px;
+  width: 130px;
+  padding: 5px 15px;
+  border: solid 0.5px #2d2926;
+  background-color: transparent;
+  color: #2d2926;
+  cursor: pointer;
+  max-width: 25%;
+  font-family: 'Ogg Medium', sans-serif; 
+  margin: 0 auto;
+  }
+  
+  .resume button:hover {
+  background-color: #2d2926;
+  color: #dbcdc2;
+  }
