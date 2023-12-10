@@ -1,7 +1,33 @@
 import { useEffect } from 'react'
+import { useState } from 'react'
+import { useRef } from 'react'
+// npm i @emailjs/browser
+import emailjs from '@emailjs/browser'
+
+
+
 import styles from './Contact.module.css'
 
 const Contact = () => {
+  const form = useRef()
+  const [successMessage, setSuccessMessage] = useState('')
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+  
+    emailjs.sendForm('service_2gb2e1h', 'template_nkk9hbp', form.current, 's8a7e9Wbcw82Ge-7C')
+      .then((result) => {
+        console.log(result.text)
+        setSuccessMessage('Message sent successfully!')
+      })
+      .catch((error) => {
+        console.log(error.text)
+      })
+      .finally(() => {
+        e.target.reset()
+      })
+  }
+
   useEffect(() => {
     document.body.style.overflow = 'hidden'
     document.documentElement.style.overflow = 'hidden'
@@ -29,16 +55,19 @@ const Contact = () => {
             </p>
           </div>
           <div className={`${styles.contactForm}`}>
-            <form>
+            {successMessage && (
+              <div className={`${styles.successMessage}`}>
+                <p>{successMessage}</p>
+              </div>
+            )}
+            <form ref={form} onSubmit={sendEmail}>
               <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" autoComplete="off" placeholder='•' />
+              <input type="text" id="name" name="user_name" autoComplete="off" placeholder='•' />
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" autoComplete="off" placeholder='•' />
-              <label htmlFor="subject">Subject</label>
-              <input type="text" id="subject" name="subject" autoComplete="off" placeholder='•' />
+              <input type="email" id="email" name="user_email" autoComplete="off" placeholder='•' />
               <label htmlFor="message">Message</label>
               <textarea id="message" name="message" autoComplete="off" placeholder='•'></textarea>
-              <button type="submit">Submit</button>
+              <button type="submit" value="Send">Submit</button>
             </form>
           </div>
         </div>
