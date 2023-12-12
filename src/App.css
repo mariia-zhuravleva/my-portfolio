@@ -40,13 +40,14 @@ html,
 body {
   margin: 0;
   height: 100%;
-  /* background-color: #f7f6ee; */
-  /* background-color: #e8e1d1; */
-  /* background-color: #eae3d9; */
   background-color: #f5f3ed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Ogg TRIAL', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {

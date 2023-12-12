@@ -1,5 +1,5 @@
 .homeContainer {
-  height: 95vh;
+  height: 90vh;
   margin: 0 50px;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
 }
 
 .topRight {
-  margin-top: 30%;
+  margin-top: 45%;
   padding-left: 40%;
   width: 75%;
 }

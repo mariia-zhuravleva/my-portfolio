@@ -1,14 +1,15 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import styles from './Home.module.css'
-import arrowDown from "../../assets/img/arrowDown.png"
-import About from '../About/About'
-import ProjectsIndex from '../ProjectsIndex/ProjectsIndex'
+// import arrowDown from "../../assets/img/arrowDown.png"
+// import About from '../About/About'
+// import ProjectsIndex from '../ProjectsIndex/ProjectsIndex'
+// import NavBar from '../NavBar/NavBar'
+// import Contact from '../Contact/Contact'
 
 const Home = () => {
   return (
     <div className={`${styles.bigContainer}`}>
-      <div className={`${styles.homeContainer}`}>
+      <div id="home" className={`${styles.homeContainer}`}>
         <div className={styles.topRight}>
           <p>Committed to creating sophisticated digital experiences that captivate users, ensuring a smooth and intuitive interaction</p>
         </div>
@@ -22,19 +23,20 @@ const Home = () => {
           <p>Software Engineer ⎢ Full Stack Web Developer </p>
         </div>
       </div>
-      <div className={styles.arrowContainer}>
+      {/* <div className={styles.arrowContainer}>
         <Link to="/about" className={styles.arrowDownLink}>
           <div className={styles.arrowDown}>
             <img src={arrowDown} alt="arrow-down" />
           </div>
         </Link>
       </div>
-      <div className={`${styles.bigAboutContainer}`}>
+      <div id="about" className={`${styles.bigAboutContainer}`}>
         <About />
       </div>
-      <div className={`${styles.projectsIndexContainer}`}>
+      <div id="projects" className={`${styles.projectsIndexContainer}`}>
         <ProjectsIndex />
       </div>
+      <NavBar location={window.location.pathname} /> */}
     </div>
   )
 }

@@ -20,6 +20,7 @@ const ProjectsIndex = () => {
 
   return ( 
     <div className={styles.projectsContainer}>
+      <div className={`${styles.curtain}`} />
       <div className={styles.leftColumn}>
         <p className={styles.projectsWord}>projects</p>
         <p className={styles.projectsText}>{projectsText}</p>

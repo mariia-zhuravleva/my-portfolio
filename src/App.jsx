@@ -1,8 +1,5 @@
-import React from 'react';
-import { useState } from 'react'
-import { Routes, Route, useNavigate } from 'react-router-dom'
+import { Routes, Route} from 'react-router-dom'
 
-// components
 import NavBar from './components/NavBar/NavBar'
 import Home from './components/Home/Home'
 import About from './components/About/About'
@@ -38,3 +35,5 @@ function App() {
 }
 
 export default App
+
+
