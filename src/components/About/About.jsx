@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+// import React from 'react'
+// import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 
 import styles from './About.module.css'
@@ -17,8 +17,8 @@ const About = () => {
         <div className={styles.aboutMeContainer}>
           <div className={styles.contentContainer}>
             <div className={`${styles.paragraphAbout} ${styles.column}`}>
-              <p className={styles.greeting}>Hey there!  I'm Mariia</p>
-              <p> I'm a seasoned Software Engineer with a unique blend of technical expertise and a creative background in lifestyle and fashion content creation. 
+              <p className={styles.greeting}>Hey there!  I&apos;m Mariia</p>
+              <p> I&apos;m a seasoned Software Engineer with a unique blend of technical expertise and a creative background in lifestyle and fashion content creation. 
                 My journey reflects a commitment to seamlessly integrate creativity with code to deliver impactful solutions.
                 <br />
                 <br />

@@ -30,7 +30,7 @@
   color: #dbcdc2;
   opacity: 0;
   overflow: hidden;
-  animation: fadeInText 1s ease-in-out 1.5s forwards, fadeInFromBottom 1.5s ease-in-out 1.5s forwards;
+  animation: fadeInText 0.5s ease-in-out 1s forwards, fadeInFromBottom 1s ease-in-out 1s forwards;
   line-height: 120px;
 }
 
@@ -44,7 +44,7 @@
   font-size: 160px;
   color: black;
   opacity: 0;
-  animation: fadeInText 1s ease-in-out 1.5s forwards;
+  animation: fadeInText 0.5s ease-in-out 1s forwards;
 }
 
 @keyframes expandBackground {
