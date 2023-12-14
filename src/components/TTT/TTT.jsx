@@ -57,7 +57,7 @@ const TTT = () => {
         <img src={landing} alt="landing-page" />
       </div>
       <div className={`${styles.journalDetailTwo}`}>
-        <p className={`${styles.journalDetail}`}><span>Key Features</span></p>
+        <p className={`${styles.journalDetail}`}><span className={`${styles.featuresSpan}`}>Key Features</span></p>
         <ul className={styles.journalFeatures}>
           {projectFeatures.map((feature, index) => {
             const [key, value] = feature.split(':').map((item) => item.trim());

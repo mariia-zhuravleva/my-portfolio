@@ -1,10 +1,4 @@
-// import { Link } from 'react-router-dom'
 import styles from './Home.module.css'
-// import arrowDown from "../../assets/img/arrowDown.png"
-// import About from '../About/About'
-// import ProjectsIndex from '../ProjectsIndex/ProjectsIndex'
-// import NavBar from '../NavBar/NavBar'
-// import Contact from '../Contact/Contact'
 
 const Home = () => {
   return (
@@ -23,20 +17,6 @@ const Home = () => {
           <p>Software Engineer ⎢ Full Stack Web Developer </p>
         </div>
       </div>
-      {/* <div className={styles.arrowContainer}>
-        <Link to="/about" className={styles.arrowDownLink}>
-          <div className={styles.arrowDown}>
-            <img src={arrowDown} alt="arrow-down" />
-          </div>
-        </Link>
-      </div>
-      <div id="about" className={`${styles.bigAboutContainer}`}>
-        <About />
-      </div>
-      <div id="projects" className={`${styles.projectsIndexContainer}`}>
-        <ProjectsIndex />
-      </div>
-      <NavBar location={window.location.pathname} /> */}
     </div>
   )
 }
