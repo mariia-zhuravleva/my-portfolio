@@ -1,14 +1,15 @@
 .arContainer {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .rectangle {
   width: 70%;
-  height: 0;
+  min-height: 100vh;
   margin: 0 auto;
   background-color: #2d2926;
   animation: expandBackground 1s ease-in-out forwards;
@@ -17,7 +18,7 @@
 .textAR{
   text-transform: capitalize;
   position: absolute;
-  top: 50%;
+  top: 21%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 115px;
@@ -25,14 +26,14 @@
   opacity: 0;
   overflow: hidden;
   animation: fadeInText 1s ease-in-out 1.5s forwards, fadeInFromBottom 1.5s ease-in-out 1.5s forwards;
-  line-height: 120px;
+  line-height: 105px;
 }
 
 .textDoubleAR {
   font-family: 'Brown Sugar', sans-serif;
   text-transform: capitalize;
   position: absolute;
-  top: 46%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 100px;
@@ -43,7 +44,7 @@
 
 @keyframes expandBackground {
   to {
-    height: 100vh;
+    height: 80vh;
   }
 }
 
@@ -172,7 +173,7 @@ ul.journalFeatures p {
 }
 
 
-.landingPP{
+.landingAR {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,11 +181,11 @@ ul.journalFeatures p {
   width: 75%;
 }
 
-.landingPP img {
+.landingAR img {
   max-width: 80%; 
 }
 
-.wandrPages {
+.arPages {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -204,7 +205,7 @@ ul.journalFeatures p {
   padding: 80px 0;
 }
 
-.wandrPages img {
+.arPages img {
   width: 60%;
   height: 60%; 
 }
@@ -213,14 +214,14 @@ ul.journalFeatures p {
   max-width: 80%;
 }
 
-img.wandrThemeOne {
+img.arThemeOne {
   padding-bottom: 60px;
   width: 50%;
   margin-left: 20px;
 }
 
 
-img.ppMobilVideo{
+img.arMobilVideo{
   width: 30%;
   margin-left: 30px;
   padding-bottom: 60px;
@@ -236,8 +237,7 @@ img.ppMobilVideo{
   text-decoration: none;
   border-radius: 50px;
   transition: background-color 0.3s ease-in-out, width 0.9s ease-in-out;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   overflow: hidden;
   white-space: nowrap; 
 }
@@ -255,22 +255,51 @@ img.ppMobilVideo{
 }
 
 @media (max-width: 414px) and (max-height: 896px) {
-  .journalContainer {
+
+  .textWandr {
+    top: 18%;
+    left: 50%;
+    font-size: 70px;
+    line-height: 70px;
+  }
+  
+  .textDouble {
+    top: 6%;
+    left: 50%;
+    font-size: 100px;
+  }
+
+  .rectangle {
+    width: 70%;
+    height: 0;
+    margin: 0 auto;
+    background-color: #2d2926;
+    animation: expandBackground 1s ease-in-out forwards;
+  }
+
+  @keyframes expandBackground {
+    to {
+      height: 88vh;
+    }
+  }
+
+  .arContainer {
     width: 100%;
     height: 100%;
+    position: relative;
   }
   
   .textAR {
-    top: 56%;
+    top: 22%;
     left: 50%;
-    font-size: 40px;
-    line-height: 38px;
+    font-size: 41px;
+    line-height: 40px;
   }
   
   .textDoubleAR {
-    top: 46%;
-    left: 50%;
-    font-size: 43px;
+    top: 10%;
+    left: 53%;
+    font-size: 45px;
   }
   
   .journalDescription {
@@ -318,16 +347,16 @@ img.ppMobilVideo{
     text-align: center; 
   }
   
-  .landingPP{
+  .landingAR {
     margin-top: 10px;
     width: 75%;
   }
   
-  .landingPP img {
+  .landingAR img {
     max-width: 80%; 
   }
   
-  .wandrPages {
+  .arPages {
     justify-content: space-around;
     margin-top: 10px;
     width: 80%;
@@ -338,14 +367,14 @@ img.ppMobilVideo{
     padding: 10px 20px;
   }
   
-  img.wandrThemeOne {
+  img.arThemeOne {
     padding-bottom: 60px;
     width: 50%;
     margin-left: 20px;
   }
   
   
-  img.ppMobilVideo{
+  img.arMobilVideo {
     width: 30%;
     margin-left: 30px;
     padding-bottom: 60px;
@@ -359,5 +388,77 @@ img.ppMobilVideo{
     font-size: 15px;
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1853px) {
+  .arContainer {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .rectangle {
+    width: 58%;
+    height: 0;
+    margin: 0 auto;
+    background-color: #2d2926;
+    animation: expandBackground 1s ease-in-out forwards;
+  }
+
+  .rectangle  {
+    margin-top: 2%;
+  }
+  
+  .textAR{
+    top: 56%;
+    left: 50%;
+  }
+  
+  .textDoubleAR {
+    top: 50%;
+    left: 50%;
+    font-size: 130px;
+  } 
+  
+  @keyframes expandBackground {
+    to {
+      height: 100vh;
+    }
+  }
+  
+  .arPages {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .arPages img {
+    width: 50%;
+    height: auto; 
+  }
+
+  div.journalLink {
+    width: auto; 
+    padding: 10px 20px; 
+    overflow: visible;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .journalLink:hover {
+    width: auto; 
+    padding: 10px 45px; 
+  }
+
+  .landingAR img {
+    max-width: 70%; 
+  }
+
+  .arMobilePages {
+    width: 55%;
+    padding-bottom: 40px;
   }
 }

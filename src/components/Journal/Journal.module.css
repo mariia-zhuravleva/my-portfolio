@@ -1,14 +1,15 @@
 .journalContainer {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .rectangle {
   width: 70%;
-  height: 0;
+  min-height: 100vh;
   margin: 0 auto;
   background-color: #2d2926;
   animation: expandBackground 1s ease-in-out forwards;
@@ -17,7 +18,7 @@
 .text {
   text-transform: capitalize;
   position: absolute;
-  top: 50%;
+  top: 21%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 135px;
@@ -32,7 +33,7 @@
   font-family: 'Brown Sugar', sans-serif;
   text-transform: capitalize;
   position: absolute;
-  top: 46%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 160px;
@@ -254,20 +255,36 @@ img.journalMobilVideo {
 }
 
 @media (max-width: 414px) and (max-height: 896px) {
+
+  .rectangle {
+    width: 70%;
+    height: 0;
+    margin: 0 auto;
+    background-color: #2d2926;
+    animation: expandBackground 1s ease-in-out forwards;
+  }
+
+  @keyframes expandBackground {
+    to {
+      height: 88vh;
+    }
+  }
+
   .journalContainer {
     width: 100%;
     height: 100%;
+    position: relative;
   }
   
   .text {
-    top: 55%;
+    top: 20%;
     left: 50%;
     font-size: 70px;
     line-height: 70px;
   }
   
   .textDouble {
-    top: 46%;
+    top: 8%;
     left: 50%;
     font-size: 70px;
   }
@@ -365,6 +382,113 @@ img.journalMobilVideo {
     font-size: 15px;
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+}
+
+
+@media (min-width: 1853px) {
+  .journalContainer {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .rectangle {
+    width: 58%;
+    height: 0;
+    margin: 0 auto;
+    background-color: #2d2926;
+    animation: expandBackground 1s ease-in-out forwards;
+  }
+
+  .rectangle  {
+    margin-top: 2%;
+  }
+  
+  .text{
+    top: 63%;
+    left: 50%;
+    font-size: 125px;
+  }
+  
+  .textDouble {
+    top: 48%;
+    left: 50%;
+    font-size: 160px;
+  } 
+  
+  @keyframes expandBackground {
+    to {
+      height: 100vh;
+    }
+  }
+
+  ul.journalFeatures {
+    padding-bottom: 50px;
+  }
+
+  .landing {
+    margin-top: 10px;
+  }
+  
+  .landing img {
+    max-width: 100%; 
+    max-height: auto; 
+  }
+  
+  .journalPages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    width: 70%;
+    border-top: solid black 0.5px;
+    padding: 50px 30px;
+    padding-bottom: 0;
+  }
+  
+  .journalMobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    width: 80%;
+    border-top: solid black 0.5px;
+    padding: 0px 30px;
+  }
+  
+  .journalPages img {
+    width: 60%;
+    height: auto; 
+    margin-right: 20px;
+  }
+  
+  .journalMobile img {
+    width: 55%;
+    height: auto; 
+    margin-right: 50px;
+  }
+  
+  img.journalMobilVideo {
+    max-width: 20%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  div.journalLink {
+    width: auto; 
+    padding: 10px 20px; 
+    overflow: visible;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .journalLink:hover {
+    width: auto; 
+    padding: 10px 45px; 
   }
 }
 

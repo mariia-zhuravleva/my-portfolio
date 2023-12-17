@@ -26,9 +26,6 @@
 }
 
 #root {
-  background-image: url(./assets/img/1.jpeg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%; 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -36,9 +33,11 @@
 
 html,
 body {
+  background: url(./assets/img/1.jpeg) no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover; 
   margin: 0;
   height: 100%;
-  background-color: #f5f3ed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Ogg TRIAL', sans-serif;
@@ -60,15 +59,23 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    /* height: 100%;
+    background-size: 100% 100%; */
   }
 
   #root {
     margin: 0;
-    background-size: 100% 100%;
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
   }
+}
+
+@media (max-width: 414px) and (max-height: 896px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden; 
+  } 
 }

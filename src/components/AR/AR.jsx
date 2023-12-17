@@ -58,7 +58,7 @@ const AR = () => {
           <NavLink to="https://artful-recollections-quest.netlify.app/" target="_blank" rel="noopener noreferrer">Artful Recollections</NavLink>
         </div>
       </div>
-      <div className={styles.landingPP}>
+      <div className={styles.landingAR}>
         <img src={landing} alt="landing-page" />
       </div>
       <div className={`${styles.journalDetailTwo}`}>
@@ -77,13 +77,12 @@ const AR = () => {
           })}
         </ul>
       </div>
-      <div className={styles.wandrPages}>
-        <img className={styles.journalArticles} src={level} alt="level-page" />
-        <img className={styles.wandrThemeOne} src={game} alt="game-page" />
+      <div className={styles.arPages}>
+        <img className={styles.arArticles} src={level} alt="level-page" />
+        <img className={styles.arThemeOne} src={game} alt="game-page" />
       </div>
       <div className={styles.arMobilePages}>
-        <img className={styles.ppMobileViews} src={mobileVideo} alt="mobile-views" />
-        {/* <img className={styles.ppMobilVideo} src={mobileVideo} alt="mobile-video" /> */}
+        <img className={styles.arMobileViews} src={mobileVideo} alt="mobile-views" />
       </div>
       <div className={styles.journalLink}>
         <NavLink to="https://artful-recollections-quest.netlify.app/" target="_blank" rel="noopener noreferrer">Explore Further</NavLink>
