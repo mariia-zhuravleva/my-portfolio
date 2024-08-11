@@ -240,7 +240,7 @@ p.name {
 @media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
   
   body, html {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
     margin: 0;
     padding: 0;
     width: 100%;
@@ -256,8 +256,9 @@ p.name {
 
   .topRight {
     margin-top: 0; 
-    padding: 0 10%; 
-    width: 100%; 
+    padding: 0; 
+    padding-right: 15%;
+    width: 80%; 
     box-sizing: border-box; 
     font-size: 10px;
   }
