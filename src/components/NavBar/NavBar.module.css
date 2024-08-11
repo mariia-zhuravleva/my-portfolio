@@ -188,8 +188,8 @@
   }
 
   .verticalList {
-    margin-top: 100%;
-    padding-bottom: 100%;
+    margin-top: 250%;
+    /* padding-bottom: 150%; */
     padding: 0; 
   }
   

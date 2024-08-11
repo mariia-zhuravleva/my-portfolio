@@ -246,3 +246,44 @@
     max-width: 50%;
   }
 }
+
+@media only screen 
+  and (min-device-width: 428px) 
+  and (max-device-width: 932px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+    .aboutContainer {
+      padding: 0 20%;
+      padding-bottom: 15%;
+      /* padding-top: 10px; */
+    }
+    
+    .aboutWord  {
+      font-size: 90px;
+      width: 100%;
+      /* margin-left: 0; */
+    }
+  
+    .contentContainer {
+      width: 100%;
+      font-size: 15px;
+    }
+    
+    .column {
+      width: 55%; 
+    }
+    
+    .anotherColumn {
+      width: 45%;
+      top: 70px; 
+    }
+    
+    .myImages img {
+      margin-left: 30px;
+    }
+    
+    .resume button {
+      max-width: 100%;
+      margin: 0 50%;
+    }
+  }
