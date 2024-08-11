@@ -171,3 +171,49 @@ p.name {
     margin: 0;
   }
 }
+
+@media only screen 
+  and (min-device-width: 430px) 
+  and (max-device-width: 932px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+  .homeContainer {
+    margin: 0 10px;
+    height: 85vh;
+  }
+
+  .topRight {
+    margin-top: 5%;
+    padding-left: 15%;
+    width: 80%;
+  }
+
+  .bottomLeft {
+    margin-left: 10%;
+    margin-bottom: 15%;
+    width: 80%;
+  }
+
+  p.name {
+    font-size: 18px;
+  }
+
+  .bottomLeft p {
+    width: 90%;
+    margin-top: 15px;
+  }
+
+  .homePhraseContainer {
+    width: 100%;
+    padding: 10% 15%;
+  }
+
+  .homePhrase {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .homeBackground {
+    width: 60%; 
+  }
+}

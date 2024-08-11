@@ -38,7 +38,7 @@ const Wandr = () => {
       </div>
       <div className={`${styles.journalDescription}`}>
         <p className={`${styles.textDescription}`}>
-          Wandr is a web-based application designed to inspire, connect, and celebrate the diverse stories woven through each traveler's journey. With an array of features crafted to enhance user experience and foster a vibrant community, Wandr empowers individuals to embark on authentic adventures and share their unique experiences with the world.
+          Wandr is a web-based application designed to inspire, connect, and celebrate the diverse stories woven through each traveler&apos;s journey. With an array of features crafted to enhance user experience and foster a vibrant community, Wandr empowers individuals to embark on authentic adventures and share their unique experiences with the world.
         </p>
       </div>
       <div className={`${styles.journalDetails}`}>

@@ -147,34 +147,6 @@ a.projectName {
 
 
 @media (min-width: 1853px) {
-  .projectsContainer {
-    /* padding: 0 55px;
-    padding-right: 15px;
-    width: 90%; */
-  }
-  
-  .leftColumn {
-    /* width: 40%;  */
-  }
-  
-  .rightColumn {
-    /* width: 55%;
-    margin-left: 8%; */
-  }
-  
-  .projectsText {
-    /* font-size: 13px;  */
-  }
-
-  .projectList li {
-    /* font-size: 30px; 
-    margin-bottom: 20px; */
-  }
-  
-  .projectDescription {
-    /* font-size: 13px; */
-  }
-
   a.projectName {
     font-size: 100px; 
   }
