@@ -200,6 +200,7 @@
 
   .sideLine {
     height: 40px; 
+    width: 0.1px;
   }
 
   .verticalList hr {
@@ -207,6 +208,53 @@
     margin: 0 10px;
   }
   
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .navbarContainer {
+    /* height: 50%; */
+    width: 50%;
+    /* margin-top: 3%; */
+    padding: 0; 
+    /* justify-content: center; */
+  }
+
+  .container ul {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container li {
+    font-size: 8px;
+    margin-left: 3px;
+    /* margin-bottom: 10px; */
+    /* padding: 10px 15px; */
+  }
+
+  .verticalList {
+    /* font-size: 12px; */
+    margin-top: 50%;
+    padding-bottom: 50%;
+  }
+
+  .verticalList li {
+    font-size: 8px;
+  }
+  
+
+  .sideContainer {
+    max-width: 20%;
+  }
+
+  .sideLine {
+    height: 30px; 
+    width: 0.1px;
+  }
+
+  .verticalList hr {
+    border-left: 0.1px solid black;
+    margin: 0 4px;
+  }
 }
 
 

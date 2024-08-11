@@ -234,7 +234,58 @@ p.name {
   .homeBackground {
     width: 60%; 
   }
-
-  
 }
 
+/* iPhone SE (2nd and 3rd gen) specific styles */
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
+  
+  body, html {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .homeContainer {
+    height: 100%; 
+    width: 100%; 
+    margin: 0; 
+    padding: 0 5%; 
+    box-sizing: border-box; 
+  }
+
+  .topRight {
+    margin-top: 0; 
+    padding: 0 10%; 
+    width: 100%; 
+    box-sizing: border-box; 
+    font-size: 10px;
+  }
+
+  .bottomLeft {
+    width: 100%; 
+    padding: 0 15%;
+    margin-left: 0; 
+    margin-bottom: 20%;
+    box-sizing: border-box; 
+  }
+
+  .bottomLeft p {
+    width: 45%;
+    font-size: 10px; 
+  }
+
+  .homePhraseContainer {
+    width: 100%;
+    padding: 10% 13%; 
+  }
+
+  .homePhrase {
+    font-size: 25px;
+    line-height: 30px; 
+  }
+
+  .homeBackground {
+    width: 100%; 
+  }
+}
