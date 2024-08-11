@@ -1,6 +1,7 @@
 .homeContainer {
   height: 90vh;
-  margin: 0 50px;
+  width: 90%;
+  margin: 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,21 +178,32 @@ p.name {
   and (max-device-width: 932px) 
   and (-webkit-device-pixel-ratio: 3) {
 
+    body, html {
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
   .homeContainer {
-    margin: 0 10px;
-    height: 85vh;
+    margin: 0;
+    padding: 0;
+    /* height: 90%; */
+    overflow: hidden;
+    /* width: 100%; 
+    box-sizing: border-box; */
   }
 
   .topRight {
-    margin-top: 5%;
+    margin-top: 0;
     padding-left: 15%;
     width: 80%;
   }
 
   .bottomLeft {
-    margin-left: 10%;
-    margin-bottom: 15%;
-    width: 80%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 45%;
   }
 
   p.name {
@@ -199,18 +211,21 @@ p.name {
   }
 
   .bottomLeft p {
-    width: 90%;
-    margin-top: 15px;
+    width: 100%;
+    /* margin-top: 15px; */
+    font-size: 15px;
   }
 
   .homePhraseContainer {
     width: 100%;
-    padding: 10% 15%;
+    margin-top: 15%;
+    margin-top: 10px;
+    /* padding: 20%; */
   }
 
   .homePhrase {
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 45px;
+    line-height: 60px;
   }
 
   .homeBackground {
