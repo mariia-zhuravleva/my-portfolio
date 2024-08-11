@@ -151,3 +151,39 @@ a.projectName {
     font-size: 100px; 
   }
 } 
+
+@media only screen 
+  and (min-device-width: 428px) 
+  and (max-device-width: 932px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+    .projectsContainer {
+      padding: 0;
+      padding-left: 23%;
+      padding-right: 3%;
+      width: 100%;
+      height: 90%;
+    }
+    
+    .leftColumn {
+      width: 45%; 
+    }
+    
+    .rightColumn {
+      width: 55%;
+    }
+    
+    .projectsText {
+      font-size: 13px; 
+    }
+  
+    a.projectName {
+      font-size: 35px; 
+      margin-bottom: 20px;
+      word-wrap: break-word; 
+    }
+    
+    .projectDescription {
+      font-size: 13px;
+    }
+  }
