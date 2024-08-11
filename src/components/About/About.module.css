@@ -285,5 +285,6 @@
     .resume button {
       max-width: 100%;
       margin: 5% 50%;
+      border-top: solid 0.5px #2d2926;
     }
   }
