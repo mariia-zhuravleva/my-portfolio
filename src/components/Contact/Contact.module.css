@@ -300,3 +300,77 @@
   }
   
 }
+
+@media only screen 
+  and (min-device-width: 428px) 
+  and (max-device-width: 932px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    
+    .contactContainer {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .textContact {
+      top: 30%;
+      left: 55%;
+      font-size: 115px;
+    }
+    
+    .textDoubleContact {
+      top: 20%;
+      left: 55%;
+      font-size: 130px;
+    }
+    
+    .contactDescription {
+      top: 25%;
+      left: 0;
+      padding-left: 20px;
+      font-size: 13px;
+    }
+      
+      .textDescriptionContact {
+      width: 50%;
+      margin-left: 10%;
+      }
+      
+      .contactForm {
+      width: 50%;
+      margin-left: 10%;
+      }
+      
+      .contactForm form {
+      font-size: 13px;
+      }
+    
+      .contactForm input {
+        width: 150px;
+      }
+    
+    
+      .contactForm textarea  {
+        border-top: solid 0.5px #dbcdc2;
+        height: 60px; 
+        width: 150px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+      
+      .contactForm button {
+        margin-top: 5px;
+      }
+      
+      .email {
+        margin-top: 30px;
+        font-size: 13px;
+      }
+    
+      .successMessage {
+        padding: 10px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        width: 70%;
+        margin: 0 auto;
+      }
+  }
