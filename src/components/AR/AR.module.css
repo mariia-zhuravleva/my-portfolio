@@ -462,3 +462,166 @@ img.arMobilVideo{
     padding-bottom: 40px;
   }
 }
+
+@media only screen 
+  and (min-device-width: 428px) 
+  and (max-device-width: 932px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+    .arContainer {
+      width: 100%;
+      min-height: 85vh;
+    }
+    
+    .rectangle {
+      width: 70%;
+      min-height: 85vh;
+      margin: 15px auto;
+    }
+    
+    .textAR {
+      text-transform: capitalize;
+      position: absolute;
+      top: 23%;
+      left: 50%;
+      /* max-height: 50%; */
+      font-size: 40px;
+      line-height: 35px;
+    }
+    
+    .textDoubleAR {
+      position: absolute;
+      top: 10%;
+      left: 51%;
+      font-size: 50px;
+      max-width: 90%;
+      height: auto;
+      padding: 30px;
+    }
+    
+    .journalDescription {
+      width: 80%;
+      margin-top: 20px;
+      padding: 50px;
+      font-size: 20px;
+    }
+    
+    .journalDetails {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    
+    .journalDetailOne {
+      margin-left: 50px;
+    }
+    
+    .journalDetailTwo {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    
+    .journalDetailThree {
+      margin-left: 0;
+    }
+
+    .journalDetail span {
+      display: inline-block;
+      margin-bottom: 5px; 
+    }
+    
+    p.journalDetail {
+      text-align: center;
+    }
+
+    /* .journalDetail {
+      max-width: 100%;
+    } */
+    
+    
+    p.journalCategory {
+      padding-top: 10px;
+      margin: 0 auto;
+    }
+    
+    ul.journalFeatures {
+      padding: 0;
+      text-align: center; 
+    }
+    
+    ul.journalFeatures li {
+      display: inline-block;
+      margin-right: 20px; 
+      vertical-align: top; 
+    }
+    
+    ul.journalFeatures li div {
+      text-align: center; 
+    }
+    
+    p.journalFeature {
+      text-align: center;
+      padding-top: 10px;
+    }
+    
+    ul.journalFeatures p {
+      margin: 0;
+    }
+    
+    
+    .landingAR {
+      margin-top: 50px;
+    }
+    
+    .landingAR img {
+      max-width: 85%; 
+      max-height: 85%; 
+    }
+    
+    .arPages {
+      margin-top: 0px;
+      width: 90%;
+      padding-bottom: 0;
+      padding: 10px 0;
+      padding-right: 80px;
+    }
+    
+    .arMobile {
+      margin-top: 50px;
+      width: 95%;
+      padding: 20px;
+    }
+    
+    .arPages img {
+      width: 60%;
+      height: 60%; 
+    }
+    
+    .arMobilePages img {
+      width: 90%;
+      height: 90%; 
+    }
+    
+    .arMobilePages {
+      padding: 0;
+      padding-top: 10px;
+    }
+    
+    .journalLink {
+      font-size: 15px;
+      padding: 5px 10px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    div.journalLink {
+      padding: 5px 10px; 
+    }
+  
+    .journalLink:hover {
+      width: auto; 
+      padding: 5px 10px; 
+    }
+  }
