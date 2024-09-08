@@ -477,3 +477,157 @@ img.ppMobilVideo{
     max-width: 70%; 
   }
 }
+
+@media only screen 
+  and (min-device-width: 428px) 
+  and (max-device-width: 932px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+    .tttContainer {
+      width: 100%;
+      min-height: 85vh;
+    }
+    
+    .rectangle {
+      width: 70%;
+      min-height: 85vh;
+      margin: 15px auto;
+    }
+    
+    .textAR {
+      text-transform: capitalize;
+      position: absolute;
+      top: 23%;
+      left: 50%;
+      /* max-height: 50%; */
+      font-size: 50px;
+      line-height: 50px;
+    }
+    
+    .textDoubleTTT {
+      position: absolute;
+      top: 11%;
+      left: 50%;
+      font-size: 80px;
+    }
+    
+    .journalDescription {
+      width: 80%;
+      margin-top: 20px;
+      padding: 50px;
+      font-size: 20px;
+    }
+    
+    .journalDetails {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    
+    .journalDetailOne {
+      margin-left: 50px;
+    }
+    
+    .journalDetailTwo {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    
+    .journalDetailThree {
+      margin-left: 0;
+    }
+
+    .journalDetail span {
+      display: inline-block;
+      margin-bottom: 5px; 
+    }
+    
+    p.journalDetail {
+      text-align: center;
+    }
+
+    /* .journalDetail {
+      max-width: 100%;
+    } */
+    
+    
+    p.journalCategory {
+      padding-top: 10px;
+      margin: 0 auto;
+    }
+    
+    ul.journalFeatures {
+      padding: 0;
+      text-align: center; 
+    }
+    
+    ul.journalFeatures li {
+      display: inline-block;
+      margin-right: 20px; 
+      vertical-align: top; 
+    }
+    
+    ul.journalFeatures li div {
+      text-align: center; 
+    }
+    
+    p.journalFeature {
+      text-align: center;
+      padding-top: 10px;
+    }
+    
+    ul.journalFeatures p {
+      margin: 0;
+    }
+    
+    
+    .landingPP {
+      margin-top: 50px;
+    }
+    
+    .landingPP img {
+      max-width: 85%; 
+      max-height: 85%; 
+    }
+    
+    .wandrPages {
+      margin-top: 10px;
+      width: 95%;
+      padding: 0 auto;
+      padding-top: 20px;
+      padding-bottom: 0;
+    }
+    
+    .arMobilePages {
+      margin-top: 5px;
+      width: 95%;
+      padding: 20px;
+    }
+    
+    .wandrPages img {
+      width: 60%;
+      height: 60%; 
+    }
+    
+    .arMobilePages img {
+      max-width: 100%;
+    }
+
+    .journalLink {
+      font-size: 15px;
+      padding: 5px 10px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    div.journalLink {
+      padding: 5px 10px; 
+    }
+  
+    .journalLink:hover {
+      width: auto; 
+      padding: 5px 10px; 
+    }
+  }
