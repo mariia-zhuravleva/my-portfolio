@@ -322,3 +322,18 @@
     margin: 0 4px;
   }
 }
+
+@media screen and (min-device-width: 1853px) 
+  and (max-device-width: 2560px)  {
+  .sideContainer {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .verticalList {
+    position: absolute;
+    left: 0;
+    top: 50%; /* You can adjust the vertical position */
+    transform: translateY(-50%);
+  }
+}

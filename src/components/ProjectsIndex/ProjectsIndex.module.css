@@ -187,3 +187,10 @@ a.projectName {
       font-size: 13px;
     }
   }
+
+  @media screen and (min-device-width: 1853px) 
+  and (max-device-width: 2560px)  {
+    .projectsContainer {
+      margin-top: 100px;
+    }
+  }
