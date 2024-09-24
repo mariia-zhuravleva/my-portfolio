@@ -679,3 +679,18 @@ img.wandrProfilePage {
       padding: 5px 10px; 
     }
   }
+
+  @media screen and (min-width: 1853px) {
+    .rectangle {
+      width: 70%;
+      min-height: 100vh;
+      margin: 0 auto;
+      margin-top: 5%;
+      background-color: #2d2926;
+      /* background-color: #dbcdc2; */
+    }
+  
+    .textDouble {
+      top: 50%;
+    }
+  }
